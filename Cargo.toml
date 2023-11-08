@@ -1,0 +1,12 @@
+[workspace]
+members = [
+    "src/faceless_dfinity_backend",
+    "src/aibe",
+]
+exclude = [
+    "src/faceless_frontend/faceless-wasm-wrapper"
+]
+
+[patch]
+[patch.crates-io]
+bn = {package = "zeropool-bn", path = "src/bn"}
